@@ -1,0 +1,13 @@
+<h1>Garments</h1>
+
+<% @garments.each do |garment| %>
+  <div>
+    <h2><%= garment.name %></h2>
+    <p><strong>Brand:</strong> <%= garment.brand %></p>
+    <p><strong>Size:</strong> <%= garment.size %></p>
+    <p><strong>Date of Purchase:</strong> <%= garment.date_of_purchase %></p>
+  </div>
+  <hr>
+<% end %>
+
+<%= link_to 'New Garment', new_garment_path %>
